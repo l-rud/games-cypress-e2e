@@ -36,4 +36,15 @@ describe('Game collection spec', () => {
     );
     /* ==== End Cypress Studio ==== */
   });
+
+  /* ==== Test Created with Cypress Studio ==== */
+  it('Game Navigation Tests', function() {
+    /* ==== Generated with Cypress Studio ==== */
+    cy.visit('http://localhost:5173/');
+    cy.get(':nth-child(2) > a').click();
+    cy.url().should('include', '/tic-tac-toe');
+    cy.get(':nth-child(3) > a').click();
+    cy.url().should('include', '/candy-crush');
+    /* ==== End Cypress Studio ==== */
+  });
 })
